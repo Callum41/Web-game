@@ -88,9 +88,9 @@ function animate() {
         player.velocity.x = 1 
     }
     // Enemy movement
-    if (keys.ArrowLeft.pressed && lastKey === 'ArrowLeft'){
+    if (keys.ArrowLeft.pressed){
         enemy.velocity.x = -1
-    } else if (keys.ArrowRight.pressed && lastKey === 'ArrowRight'){
+    } else if (keys.ArrowRight.pressed){
         enemy.velocity.x = 1 
     }
 }
@@ -147,4 +147,4 @@ window.addEventListener('keyup', (event) => {
             break
         }
         console.log(event.key)
-})  
+})      
